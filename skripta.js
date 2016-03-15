@@ -7,6 +7,7 @@ window.addEventListener('load', function() {
         var picker = new jscolor(input);
         picker.fromRGB(Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255))
         document.getElementById("barve").appendChild(input);
+        
 	}
 	
 	document.querySelector("#novaBarva") 
