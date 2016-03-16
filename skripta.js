@@ -10,10 +10,21 @@ window.addEventListener('load', function() {
         
 	}
 	
+
+	
 	document.querySelector("#novaBarva") 
 		.addEventListener('click', dodajBarvo);
 		
 	//Odstrani barve
+	
+	var odstraniBarve = function(event) {
+		
+		var element = document.getElementById("barve");
+	
+		element.innerHTML="";
+	} 
+	document.querySelector("#odstraniBarve")
+		.addEventListener('click', odstraniBarve);
 	
 	//Stroboskop
 	var vrednosti = [];
